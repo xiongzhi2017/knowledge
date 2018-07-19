@@ -49,6 +49,10 @@ SELECT * FROM 表名 where 字段 > DATE_SUB(CURDATE(), INTERVAL 1 WEEK) -->一�
 SELECT * FROM 表名 where 字段 > DATE_SUB(CURDATE(), INTERVAL 1 MONTH) -->一月内
 SELECT * FROM 表名 where 字段 > DATE_SUB(CURDATE(), INTERVAL 1 YEAR) -->一年内
 
+-->时间相减
+--单位:FRAC_SECOND(毫秒)|SECOND(秒)|MINUTE(分钟)|HOUR(小时)|DAY(天)|WEEK(星期)|MONTH(月)|QUARTER(季度)|YEAR(年
+--TIMESTAMPDIFF(单位,开始时间,结束时间)
+SELECT TIMESTAMPDIFF(SECOND,'2018-01-01 00:00:00','2018-01-01 00:00:10') -->10
 
 ---------------------------------日期格式化---------------------------------
 
